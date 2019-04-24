@@ -6,22 +6,28 @@
 
 .btn.btn-primary {
   border-width: 2px;
+  border-color: #225baf;
+  background-color: #225baf;
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   background-color: transparent;
-  color: #0062cc;
+  color: #225baf;
 }
 
 .top-header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
-  padding-top: 25px;
+  padding-top: 12px;
   border-bottom: 2px solid #ffa400;
 }
 
 .top-header .parent {
   width: 100%;
+}
+
+.top-header .parent .par {
+  padding-top: 3px;
 }
 
 .top-header .container {
@@ -44,7 +50,7 @@
 
 .top-header .main-text {
   margin-top: -3px;
-  font-size: 20px;
+  font-size: 22px;
   color: #ffffff;
   font-family: "Roboto";
   padding-left: 30px;
@@ -84,16 +90,17 @@
   font-size: 20px;
   font-family: "Roboto";
   font-weight: 900;
-  padding: 0 8px;
+  padding: 0 7px;
 }
 
 .top-header .languages li.active a {
   color: #ffa400;
-  border-bottom: 2px solid #ffa400;
+  border-bottom: 3px solid #ffa400;
 }
 
 .top-header .languages li a {
   color: white;
+  padding: 0 2px;
 }
 
 .top-header .languages li a:hover, .top-header .languages li a:active, .top-header .languages li a:focus {
@@ -101,13 +108,17 @@
   text-decoration: none;
 }
 
+.top-header .button-parent {
+  margin-top: -10px;
+}
+
 .top-header .button-parent button {
   margin-top: 5px;
   margin-right: 8px;
   background-color: #ffa400;
   color: black;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   border: 1px solid #ffa400;
   font-size: 18px;
   font-family: "Roboto";
@@ -124,7 +135,7 @@
 }
 
 header nav.navbar {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #4c4c4c;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -163,10 +174,16 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
     font-size: 18px;
   }
   .top-header .right-sidebar span a {
-    font-size: 18px;
+    font-size: 17px;
+  }
+  .top-header .right-sidebar img {
+    max-height: 21px;
   }
   .top-header .languages li {
-    font-size: 18px;
+    font-size: 17px;
+  }
+  .top-header .button-parent {
+    margin-top: -5px;
   }
 }
 
@@ -217,7 +234,7 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
   padding: 35px 30px;
   width: 100%;
   max-width: 357px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #4c4c4c;
 }
 
 .main-container form h2 {
@@ -250,7 +267,11 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
   max-width: 504px;
   padding: 30px;
   font-family: "Roboto";
-  background-color: rgba(255, 255, 255, 0.5);
+  background: white;
+  background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(50%, rgba(255, 255, 255, 0.62)), color-stop(98%, rgba(255, 255, 255, 0.26)), color-stop(98%, rgba(255, 255, 255, 0.26)), color-stop(100%, rgba(255, 255, 255, 0.24)));
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, rgba(255, 255, 255, 0.62)), color-stop(98%, rgba(255, 255, 255, 0.26)), color-stop(98%, rgba(255, 255, 255, 0.26)), to(rgba(255, 255, 255, 0.24)));
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0.62) 50%, rgba(255, 255, 255, 0.26) 98%, rgba(255, 255, 255, 0.26) 98%, rgba(255, 255, 255, 0.24) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
 }
 
 .main-container .banner h2 {
@@ -259,7 +280,7 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
   font-weight: 900;
   text-align: center;
   padding: 0 28px;
-  font-family: "Roboto Medium";
+  font-family: "Roboto";
 }
 
 .main-container .banner p {
@@ -324,12 +345,12 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
 }
 
 .benefits {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 95px;
+  padding-bottom: 70px;
 }
 
 .benefits h2 {
-  font-family: "Roboto Medium";
+  font-family: "Roboto";
   font-weight: 900;
   text-align: center;
   color: #225baf;
@@ -558,17 +579,18 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
   font-weight: 900;
   text-align: center;
   background-color: #225baf;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 65px;
+  padding-bottom: 53px;
 }
 
 .counter h3 {
-  font-family: "Roboto Medium";
+  font-family: "Roboto";
   font-size: 2.5rem;
   font-weight: 900;
 }
 
 .counter p {
+  font-weight: 500;
   font-size: 1.3rem;
   color: white;
 }
@@ -589,12 +611,12 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
 }
 
 section.products {
-  padding-top: 75px;
-  padding-bottom: 50px;
+  padding-top: 95px;
+  padding-bottom: 70px;
 }
 
 section.products h2 {
-  font-family: "Roboto Medium";
+  font-family: "Roboto";
   font-weight: 900;
   text-align: center;
   color: #225baf;
@@ -614,7 +636,7 @@ section.products .pr-list {
 }
 
 section.products .pr-list > div {
-  margin-top: 40px;
+  margin-top: 43px;
   padding: 0 20px;
 }
 
@@ -666,7 +688,7 @@ section.products .pr-list h5 {
 section.products .pr-list .old {
   font-size: 28px;
   color: #474644;
-  font-family: "Roboto Medium";
+  font-family: "Roboto";
   font-weight: 900;
   text-decoration: line-through;
 }
@@ -674,7 +696,7 @@ section.products .pr-list .old {
 section.products .pr-list .new {
   font-size: 39px;
   color: #225baf;
-  font-family: "Roboto Medium";
+  font-family: "Roboto";
   font-weight: 900;
   text-align: center;
 }
@@ -762,8 +784,8 @@ section.products .pr-list .new {
 }
 
 .comfort {
-  padding-top: 140px;
-  padding-bottom: 85px;
+  padding-top: 165px;
+  padding-bottom: 115px;
   background-image: url("../images/big.png");
   background-size: cover;
   background-position: center;
@@ -771,7 +793,7 @@ section.products .pr-list .new {
 
 .comfort h2 {
   font-size: 72px;
-  font-family: "Roboto Medium";
+  font-family: "Roboto";
   font-weight: 900;
   color: white;
 }
@@ -794,7 +816,7 @@ section.products .pr-list .new {
 .comfort button {
   font-size: 23px;
   color: #474644;
-  font-family: "Roboto Medium";
+  font-family: "Roboto";
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
@@ -926,12 +948,12 @@ section.products .pr-list .new {
 }
 
 .proecting {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 95px;
+  padding-bottom: 70px;
 }
 
 .proecting h2 {
-  font-family: "Roboto Medium";
+  font-family: "Roboto";
   font-weight: 900;
   text-align: center;
   color: #225baf;
@@ -1049,7 +1071,9 @@ footer {
 footer h5 {
   font-size: 30px;
   color: #ffa400;
-  font-family: "Roboto Medium";
+  font-family: "Roboto";
+  font-weight: 900;
+  margin-bottom: 35px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1091,7 +1115,7 @@ footer .contacts-after::after {
 }
 
 footer .contacts {
-  padding: 60px;
+  padding: 50px 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1203,7 +1227,7 @@ footer .econom-container h3 {
   text-transform: uppercase;
   color: white;
   font-size: 39px;
-  font-family: "Roboto Medium";
+  font-family: "Roboto";
 }
 
 footer .econom-container h3::before {
@@ -1214,7 +1238,7 @@ footer .econom-container h3::before {
   border-left-color: transparent;
   border-bottom-color: transparent;
   width: 40%;
-  height: 300px;
+  height: 283px;
   top: -120px;
   right: 20%;
   z-index: 2;
@@ -1295,7 +1319,7 @@ footer .econom-container button {
     font-size: 26px;
   }
   footer .econom-container h3::before {
-    height: 210px;
+    height: 202px;
     top: -60px;
     right: 15px;
   }
@@ -1384,13 +1408,13 @@ footer .econom-container button {
 
 .montage .title {
   background-color: rgba(0, 0, 0, 0.75);
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 45px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
 }
 
 .montage .title h2 {
-  font-family: "Roboto Medium";
+  font-family: "Roboto";
   font-weight: 900;
   text-align: center;
   color: #ffa400;
@@ -1637,3 +1661,4 @@ footer .econom-container button {
     padding-left: 0;
   }
 }
+/*# sourceMappingURL=style.css.map */
