@@ -308,6 +308,9 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
   .main-container {
     background-size: cover;
     max-height: none;
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
+    min-height: max-content;
   }
   .main-container .container {
     -webkit-box-orient: vertical;

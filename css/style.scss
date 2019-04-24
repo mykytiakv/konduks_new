@@ -353,6 +353,7 @@ header nav {
     .main-container {
         background-size: cover;
         max-height: none;
+        min-height: max-content;
         .container {
             flex-direction: column;
         }
