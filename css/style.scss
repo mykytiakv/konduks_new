@@ -46,7 +46,8 @@ $yellow: #ffa400;
     
     .main-text {
         margin-top: -3px;
-        font-size: 22px;
+        font-size: 24px;
+        line-height: 30px; 
         color: #ffffff;
         font-family: "Roboto";
         padding-left: 30px;
@@ -115,7 +116,7 @@ $yellow: #ffa400;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
             border: 1px solid $yellow;
-            font-size: 18px;
+            font-size: 16px;
             font-family: "Roboto";
             font-weight: 400;
             transition: all .3s ease;
@@ -146,6 +147,8 @@ header nav {
                 font-size: 17px;
                 text-transform: uppercase;
                 transition: all .3s ease;
+                padding-top: 5px;
+                padding-bottom: 5px;
                 &:hover, &:active, &:focus {
                     color: $yellow;
                 }
@@ -191,7 +194,8 @@ header nav {
         }
         
         .main-text {
-            font-size: 18px;
+            font-size: 21px;
+            line-height: 26px;
         }
     
         .right-sidebar {
@@ -257,8 +261,8 @@ header nav {
 // end header
 
 .main-container {
-    padding-top: 80px;
-    background-image: url(../images/house.png);
+    padding-top: 70px;
+    background-image: url(../images/house.jpg);
     background-position: center;
     height: calc(100vh - 200px);
     max-height: 600px;
@@ -268,7 +272,7 @@ header nav {
         text-transform: uppercase;
     }
     h2 {
-        font-size: 18px;
+        font-size: 19px;
         color: #ffa400;
         font-family: "Roboto";
         font-weight: 900;
@@ -286,10 +290,11 @@ header nav {
             font-family: "Roboto";
             font-weight: 900;
             text-align: center;
-            font-size: 20px;
+            font-size: 22px;
             width: 100%;
             border-radius: 10px;
             padding: 8px;
+            line-height: normal;
         }
         input {
             border-radius: 10px;
@@ -318,6 +323,7 @@ header nav {
         h2 {
             font-size: 23px;
             color: #225baf;
+            line-height: 30px;
             font-weight: 900;
             text-align: center;
             padding: 0 28px;
@@ -328,6 +334,8 @@ header nav {
             font-weight: 400;
             text-align: center;
             font-size: 23px;
+            line-height: 30px;
+            margin-top: 21px;
             text-transform: uppercase;
             line-height: 25px;
         }
@@ -344,6 +352,7 @@ header nav {
             max-width: 450px;
             h2, p {
                 font-size: 21px;
+                line-height: 25px;
             }
         }    
     }
@@ -375,6 +384,7 @@ header nav {
         .banner {
             h2, p {
                 font-size: 18px;
+                line-height: 22px;
             }
         }    
     }
@@ -386,6 +396,7 @@ header nav {
             padding: 30px 15px;
             h2, button {
                 font-size: 16.5px;
+                line-height: 20px;
             }
         }
         .banner {
@@ -408,13 +419,15 @@ header nav {
         text-align: center;
         color: #225baf;
         text-transform: uppercase;
+        font-size: 1.9rem;
+        margin-bottom: 2px;
     }
     p {
         color: #474644;
         font-family: "Roboto Condensed";
         font-weight: 300;
         text-align: center;
-        font-size: 20px;
+        font-size: 21.5px;
     }
 
     .img-item-price {
@@ -459,7 +472,7 @@ header nav {
                     background-color: #ffa400;
                     /* display: block; */
                     width: 170px;
-                    height: 2px;
+                    height: 3px;
                     right: -170px;
                     position: absolute;
                     bottom: -2px;
@@ -647,8 +660,8 @@ header nav {
     font-weight: 900;
     text-align: center;
     background-color: #225baf;
-    padding-top: 65px;
-    padding-bottom: 53px;
+    padding-top: 35px;
+    padding-bottom: 27px;
 
     h3 {
         font-family: "Roboto";
@@ -657,8 +670,8 @@ header nav {
     }
 
     p {
-        font-weight: 500;
-        font-size: 1.3rem;
+        font-weight: 400;
+        font-size: 1.4rem;
         color: white;
     }
 }
@@ -687,21 +700,23 @@ header nav {
 // end counter
 
 section.products {
-    padding-top: 95px;
-    padding-bottom: 70px;
+    padding-top: 65px;
+    padding-bottom: 57px;
     h2 {
         font-family: "Roboto";
         font-weight: 900;
         text-align: center;
         color: #225baf;
         text-transform: uppercase;
+        font-size: 1.9rem;
+        margin-bottom: 2px;
     }
     p {
         color: #474644;
         font-family: "Roboto Condensed";
         font-weight: 300;
         text-align: center;
-        font-size: 20px;
+        font-size: 21.5px;
     }
     .pr-list {
         font-family: "Roboto";
@@ -730,10 +745,11 @@ section.products {
             font-family: "Roboto";
             font-weight: 900;
             text-align: center;
-            font-size: 20px;
+            font-size: 22px;
             width: 100%;
             border-radius: 10px;
             padding: 8px;
+            line-height: normal;
             text-transform: uppercase;
         }
         h5 {
@@ -869,8 +885,8 @@ section.products {
 // end products
 
 .comfort {
-    padding-top: 165px;
-    padding-bottom: 115px;
+    padding-top: 140px;
+    padding-bottom: 92px;
     background-image: url('../images/big.png');
     background-size: cover;
     background-position: center;
@@ -878,6 +894,7 @@ section.products {
         font-size: 72px;
         font-family: "Roboto";
         font-weight: 900;
+        margin-bottom: 0;
         color: white;
     }
     h5 {
@@ -886,11 +903,10 @@ section.products {
         color: white;
     }
     p {
-        font-size: 18px;
+        font-size: 17px;
         color: #ffffff;
-        font-family: "Roboto Condensed";
-        font-weight: 300;
-        padding-top: 20px;
+        font-family: "Roboto";
+        padding-top: 15px;
         margin-bottom: 1.5rem;
     }
     button {
@@ -899,6 +915,7 @@ section.products {
         font-family: "Roboto";
         font-weight: 900;
         text-align: center;
+        line-height: normal;
         text-transform: uppercase;
         background-color: $yellow;
         border: 2px solid $yellow;
@@ -1026,24 +1043,26 @@ section.products {
 }
 
 .proecting {
-    padding-top: 95px;
-    padding-bottom: 70px;
+    padding-top: 65px;
+    padding-bottom: 7px;
     h2 {
         font-family: "Roboto";
         font-weight: 900;
         text-align: center;
         color: #225baf;
         text-transform: uppercase;
+        font-size: 1.9rem;
+        margin-bottom: 2px;
     }
     p {
         color: #474644;
         font-family: "Roboto Condensed";
         font-weight: 300;
         text-align: center;
-        font-size: 20px;
+        font-size: 21.5px;
     }
     .items {
-        padding-top: 50px;
+        padding-top: 15px;
         .head-parent {
             height: 60px;
             display: flex;
@@ -1056,6 +1075,7 @@ section.products {
             text-align: center;
             font-size: 22px;
             text-transform: uppercase;
+            margin-bottom: 0;
         }
         img {
             // max-width: 100%;
@@ -1073,6 +1093,7 @@ section.products {
             font-size: 20px;
             border-radius: 10px;
             text-transform: uppercase;
+            line-height: normal;
         }
     }
 }
@@ -1257,7 +1278,7 @@ footer {
         }
 
         h5 {
-            font-size: 32px;
+            font-size: 27px;
             color: #ffffff;
             font-family: "Roboto";
             font-weight: 400;
@@ -1319,12 +1340,13 @@ footer {
             font-family: "Roboto";
             font-weight: 900;
             text-align: center;
-            font-size: 20px;
             border-radius: 10px;
             text-transform: uppercase;
             margin-left: 50px;
             position: relative;
             z-index: 3;
+            font-size: 22px;
+            line-height: normal;
         }
     }
 }
@@ -1334,7 +1356,7 @@ footer {
         .contacts {
             padding: 55px;    
             h5 {
-                font-size: 28px;
+                font-size: 26px;
             }    
         }
     
@@ -1350,7 +1372,7 @@ footer {
     footer {
     
         h5 {
-            font-size: 26px;
+            font-size: 23px;
         }
     
         .contacts-container {
@@ -1409,10 +1431,7 @@ footer {
 
 @media(max-width: 767px) {
     footer {
-    
-        h5 {
-        }
-    
+        
         .contacts-container {
             margin-top: 30px;
             padding: 0 50px;
@@ -1429,46 +1448,15 @@ footer {
         .contacts {
             flex-direction: column;
     
-            &::before {
-            }
-    
-            &::after {
-            }
-    
             .item {
                 margin-bottom: 30px;
             }
-    
-            .circle {
-    
-                img {
-                    &.envelope {
-                    }
-                    &.iphone {
-                    }
-                }
-            }
-    
+        
             h5 {
                 font-size: 28px;
-            }
-    
-            p {
-            }
-    
+            }    
         }
     
-        .econom-container {
-            h3 {
-                
-                &::before {
-                }  
-                &::after {
-                }  
-            }
-            button {
-            }
-        }
     }
 }
 
@@ -1536,6 +1524,8 @@ footer {
             font-weight: 900;
             text-align: center;
             color: $yellow;
+            font-size: 1.9rem;
+            margin-bottom: 2px;
             text-transform: uppercase;
         }
         p {
@@ -1543,7 +1533,7 @@ footer {
             font-family: "Roboto Condensed";
             font-weight: 300;
             text-align: center;
-            font-size: 20px;
+            font-size: 21.5px;
         }
     }
     h5 {
@@ -1568,7 +1558,7 @@ footer {
         position: relative;
     }
     .vert-line {
-        width: 2px;
+        width: 3px;
         background-color: $yellow;
         height: 100%;
         margin: auto;
@@ -1592,7 +1582,7 @@ footer {
             }
             .line {
                 width: 145px;
-                height: 2px;
+                height: 3px;
                 background-color: #ffa400;
                 position: absolute;
                 right: -145px;
@@ -1601,15 +1591,16 @@ footer {
         }
         img {
             max-width: 100%;
-            border: 2px solid $yellow;
+            border: 3px solid $yellow;
             border-radius: 10px;            
         }
         &.left {
             &:first-child {
                 margin-top: 40px;
             }
-            p {
+            p, h5 {
                 text-align: right;
+                padding-right: 50px;
             }
         }
         &.right {            
@@ -1621,8 +1612,9 @@ footer {
             &:nth-child(2) {
                 margin-bottom: 75px;
             }
-            p {
+            p, h5 {
                 text-align: left;
+                padding-left: 50px;
             }
             .dot {
                 right: auto;
@@ -1695,13 +1687,20 @@ footer {
             padding-right: 0;
             padding-left: 100px;
             &.left {
-                p {
+                p, h5 {
                     text-align: left;
+                    padding-right: 0;
+                    padding-left: 30px;
                 }
             }
             &.right {
                 &:first-child {
                     margin-top: 0;
+                }
+                p, h5 {
+                    text-align: left;
+                    padding-right: 0;
+                    padding-left: 30px;
                 }
             }
             .img-container {
