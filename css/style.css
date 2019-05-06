@@ -426,7 +426,7 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
   background-color: #ffa400;
   /* display: block; */
   width: 170px;
-  height: 3px;
+  height: 2px;
   right: -170px;
   position: absolute;
   bottom: -2px;
