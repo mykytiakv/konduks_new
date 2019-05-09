@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Roboto Condensed Light';
+  src: url(../fonts/roboto-condensed-light.ttf) format("truetype");
+}
+
 .container {
   max-width: 1300px;
   margin: auto;
@@ -632,8 +637,7 @@ section.products {
 }
 
 section.products h2 {
-  font-family: "Roboto";
-  font-weight: 900;
+  font-family: "Roboto Black";
   text-align: center;
   color: #225baf;
   text-transform: uppercase;
@@ -1695,6 +1699,794 @@ footer .econom-container button {
   }
   .montage .cont .col-md-6.right {
     padding-left: 0;
+  }
+}
+
+.list-cont {
+  padding: 10px 42px;
+  border: 1px solid #cbdef4;
+  border-radius: 1px;
+  margin-top: 15px;
+}
+
+.list-cont h3 {
+  font-family: "Roboto Black";
+  font-size: 2.85rem;
+  color: #474644;
+  text-align: center;
+}
+
+@media (max-width: 1440px) {
+  .list-cont h3 {
+    font-size: calc(0.915rem + 2.15vw) ;
+  }
+}
+
+.list-cont ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-family: "Roboto Condensed Light";
+  font-size: 2.85rem;
+  color: #474644;
+}
+
+@media (max-width: 1440px) {
+  .list-cont ul {
+    font-size: calc(0.915rem + 2.15vw) ;
+  }
+}
+
+.list-cont ul li {
+  line-height: 2.85rem;
+}
+
+.list-cont ul li img {
+  width: 55px;
+  margin-right: 21px;
+}
+
+@media (max-width: 768px) {
+  .list-cont {
+    padding: 10px 25px;
+  }
+  .list-cont ul li img {
+    width: 45px;
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .list-cont {
+    padding: 10px 15px;
+  }
+  .list-cont ul li img {
+    width: 40px;
+    margin-right: 10px;
+  }
+}
+
+.separator {
+  padding: 17px 0;
+  background-color: #225baf;
+  color: white;
+}
+
+.separator b {
+  font-family: "Roboto Black";
+  font-size: 2rem;
+}
+
+@media (max-width: 1440px) {
+  .separator b {
+    font-size: calc(0.83rem + 1.3vw) ;
+  }
+}
+
+.separator.white {
+  padding-top: 0;
+  padding-bottom: 50px;
+  background-color: white;
+  color: #225baf;
+  text-transform: uppercase;
+}
+
+.separator .m-t {
+  font-size: 1.55rem;
+  line-height: 1.85rem;
+  font-family: "Roboto Regular";
+}
+
+@media (max-width: 1440px) {
+  .separator .m-t {
+    font-size: calc(0.785rem + 0.85vw) ;
+  }
+}
+
+.plan {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.plan .math .plus {
+  position: absolute;
+  height: 39px;
+  top: 55%;
+  left: calc(33% + 33px);
+}
+
+.plan .math .equals {
+  position: absolute;
+  width: 35px;
+  top: calc(55% + 5px);
+  left: calc(63% - 5px);
+  z-index: 2;
+}
+
+.plan .math .math-item .title {
+  height: 80px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Roboto Condensed Light";
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1440px) {
+  .plan .math .math-item .title {
+    font-size: calc(0.74rem + 0.4vw) ;
+  }
+}
+
+.plan .math .math-item img {
+  max-width: 100%;
+}
+
+.plan .math .math-item:nth-of-type(2) img {
+  margin-top: 20px;
+}
+
+.plan .math .math-item:last-of-type img {
+  padding-left: 15px;
+}
+
+@media (max-width: 1500px) {
+  .plan .math .plus {
+    left: 33%;
+  }
+  .plan .math .equals {
+    left: 66%;
+  }
+  .plan .math .math-item:nth-of-type(2) img {
+    padding-left: 25px;
+  }
+  .plan .math .math-item:last-of-type img {
+    padding-left: 45px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .plan .math .plus {
+    left: calc(33% - 15px);
+    width: 30px;
+    height: auto;
+  }
+  .plan .math .equals {
+    width: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .plan .math .plus, .plan .math .equals {
+    position: relative;
+    width: 40px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding-top: 45px;
+  }
+  .plan .math .math-item {
+    text-align: center;
+  }
+  .plan .math .math-item .title {
+    font-size: 1.75rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 991px) and (max-width: 1440px) {
+  .plan .math .math-item .title {
+    font-size: calc(0.805rem + 1.05vw) ;
+  }
+}
+
+@media (max-width: 991px) {
+  .plan .math .math-item img {
+    padding: 0;
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .plan .math .plus, .plan .math .equals {
+    width: 30px;
+  }
+}
+
+.grad-section {
+  position: relative;
+}
+
+.grad-section.bottom .containe {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.grad-section.bottom .containe .item:first-of-type {
+  background-color: #225baf;
+  padding-left: 3%;
+  padding-right: 6%;
+}
+
+.grad-section.bottom .containe .item:first-of-type .t1 {
+  color: white;
+}
+
+.grad-section.bottom .btn {
+  background-color: #FFA400;
+  border-color: #FFA400;
+  color: black;
+}
+
+.grad-section.bottom .btn:focus {
+  background-color: #FFA400;
+  border-color: #FFA400;
+  color: black;
+}
+
+.grad-section.bottom .btn:hover {
+  color: #FFA400;
+  border-color: #FFA400;
+  background-color: transparent;
+}
+
+.grad-section .item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.grad-section .item:last-of-type {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.grad-section .grad {
+  width: 50%;
+  position: absolute;
+  height: 100%;
+  background: #FFA400;
+}
+
+.grad-section .grad::after {
+  position: absolute;
+  right: 0;
+  content: '';
+  width: 0;
+  height: 0;
+  top: 0;
+  z-index: 99;
+  border-top: 200px solid white;
+  border-left: 85px solid transparent;
+}
+
+.grad-section .t1, .grad-section .t2 {
+  color: #474644;
+  text-align: center;
+}
+
+.grad-section .t1 {
+  font-size: 1.65rem;
+  line-height: 1.9rem;
+  font-family: "Roboto Regular";
+}
+
+@media (max-width: 1440px) {
+  .grad-section .t1 {
+    font-size: calc(0.795rem + 0.95vw) ;
+  }
+}
+
+.grad-section .t1 a {
+  font-family: "Roboto Black";
+}
+
+.grad-section .t1 a:hover {
+  text-decoration: none;
+}
+
+.grad-section .t2 {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-family: "Roboto Black";
+}
+
+@media (max-width: 1440px) {
+  .grad-section .t2 {
+    font-size: calc(0.83rem + 1.3vw) ;
+  }
+}
+
+.grad-section .btn {
+  font-family: "Roboto Black";
+  text-align: center;
+  font-size: 1.35rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  line-height: normal;
+  margin-top: 20px;
+  padding: 12px 15px;
+}
+
+@media (max-width: 1440px) {
+  .grad-section .btn {
+    font-size: calc(0.765rem + 0.65vw) ;
+  }
+}
+
+.grad-section .btn:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 1440px) {
+  .grad-section .t1 {
+    font-size: 1.45rem;
+    line-height: 1.7rem;
+  }
+}
+
+@media (max-width: 1440px) and (max-width: 1440px) {
+  .grad-section .t1 {
+    font-size: calc(0.775rem + 0.75vw) ;
+  }
+}
+
+@media (max-width: 1440px) {
+  .grad-section .t2 {
+    font-size: 1.75rem;
+    line-height: 2.1rem;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-family: "Roboto Black";
+  }
+}
+
+@media (max-width: 1440px) and (max-width: 1440px) {
+  .grad-section .t2 {
+    font-size: calc(0.805rem + 1.05vw) ;
+  }
+}
+
+@media (max-width: 1440px) {
+  .grad-section .btn {
+    font-size: 1.2rem;
+    padding: 10px 13px;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 1440px) and (max-width: 1440px) {
+  .grad-section .btn {
+    font-size: calc(0.75rem + 0.5vw) ;
+  }
+}
+
+@media (max-width: 1200px) {
+  .grad-section.bottom .grad:after {
+    border-top-width: 200px;
+  }
+  .grad-section.bottom .t1 {
+    font-size: 1.4rem;
+    line-height: 1.65rem;
+  }
+}
+
+@media (max-width: 1200px) and (max-width: 1440px) {
+  .grad-section.bottom .t1 {
+    font-size: calc(0.77rem + 0.7vw) ;
+  }
+}
+
+@media (max-width: 1200px) {
+  .grad-section .item {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+}
+
+@media (max-width: 1065px) {
+  .grad-section .item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .grad-section.bottom .t1 {
+    font-size: 1.45rem;
+    line-height: 1.7rem;
+  }
+}
+
+@media (max-width: 991px) and (max-width: 1440px) {
+  .grad-section.bottom .t1 {
+    font-size: calc(0.775rem + 0.75vw) ;
+  }
+}
+
+@media (max-width: 991px) {
+  .grad-section .grad {
+    display: none;
+  }
+  .grad-section .t2 {
+    line-height: 1.5rem;
+    padding: 0;
+  }
+  .grad-section .item:first-of-type {
+    background-color: #FFA400;
+  }
+  .grad-section .item:last-of-type {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.line-separator {
+  background-color: #FFA400;
+  height: 3px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.mont-ge.products .main-img {
+  height: 580px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.mont-ge.products .item {
+  font-size: 1.55rem;
+  line-height: 1.75rem;
+  font-family: "Roboto Regular";
+}
+
+.mont-ge.products .item .num {
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .mont-ge.products .item {
+    font-size: calc(0.785rem + 0.85vw) ;
+  }
+}
+
+.mont-ge.products .item:first-of-type {
+  text-align: right;
+}
+
+.mont-ge.products .item:first-of-type ul li {
+  padding-right: 20px;
+}
+
+.mont-ge.products .item ul {
+  list-style-type: none;
+}
+
+.mont-ge.products .item ul li {
+  margin-top: 25px;
+  margin-bottom: 64px;
+  height: 55px;
+  text-align: center;
+}
+
+.mont-ge.products .l-circle {
+  float: left;
+  height: 580px;
+  width: 580px;
+  shape-outside: circle(50% at 0 50%);
+}
+
+.mont-ge.products .r-circle {
+  float: right;
+  height: 580px;
+  width: 580px;
+  shape-outside: circle(50% at 100% 50%);
+}
+
+.mont-ge.products p {
+  color: #225baf;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-family: "Roboto Regular";
+  font-size: 1.55rem;
+}
+
+@media (max-width: 1440px) {
+  .mont-ge.products p {
+    font-size: calc(0.785rem + 0.85vw) ;
+  }
+}
+
+@media (max-width: 1440px) {
+  .mont-ge.products .main-img {
+    height: 500px;
+  }
+  .mont-ge.products .item {
+    font-size: 1.45rem;
+    line-height: 1.7rem;
+  }
+}
+
+@media (max-width: 1440px) and (max-width: 1440px) {
+  .mont-ge.products .item {
+    font-size: calc(0.775rem + 0.75vw) ;
+  }
+}
+
+@media (max-width: 1440px) {
+  .mont-ge.products .item ul li {
+    margin-bottom: 40px;
+    height: 55px;
+  }
+  .mont-ge.products .l-circle, .mont-ge.products .r-circle {
+    height: 500px;
+    width: 500px;
+  }
+  .mont-ge.products p {
+    font-size: 1.45rem;
+  }
+}
+
+@media (max-width: 1440px) and (max-width: 1440px) {
+  .mont-ge.products p {
+    font-size: calc(0.775rem + 0.75vw) ;
+  }
+}
+
+@media (max-width: 1360px) {
+  .mont-ge.products .main-img {
+    height: 450px;
+  }
+  .mont-ge.products .item {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 1360px) and (max-width: 1440px) {
+  .mont-ge.products .item {
+    font-size: calc(0.76rem + 0.6vw) ;
+  }
+}
+
+@media (max-width: 1360px) {
+  .mont-ge.products .item ul li {
+    margin-bottom: 30px;
+  }
+  .mont-ge.products .l-circle, .mont-ge.products .r-circle {
+    height: 450px;
+    width: 450px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mont-ge.products .main-img {
+    height: 375px;
+  }
+  .mont-ge.products .item {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 1200px) and (max-width: 1440px) {
+  .mont-ge.products .item {
+    font-size: calc(0.75rem + 0.5vw) ;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mont-ge.products .item ul {
+    list-style-type: none;
+  }
+  .mont-ge.products .item ul li {
+    margin-bottom: 25px;
+    height: 48px;
+  }
+  .mont-ge.products .l-circle, .mont-ge.products .r-circle {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mont-ge.products {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .mont-ge.products .parent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mont-ge.products .parent br {
+    display: none;
+  }
+  .mont-ge.products .main-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 580px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .mont-ge.products .item {
+    font-size: 1.55rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (max-width: 991px) and (max-width: 1440px) {
+  .mont-ge.products .item {
+    font-size: calc(0.785rem + 0.85vw) ;
+  }
+}
+
+@media (max-width: 991px) {
+  .mont-ge.products .item .num {
+    display: inline-block;
+    padding-right: 10px;
+  }
+  .mont-ge.products .item:first-of-type {
+    text-align: left;
+  }
+  .mont-ge.products .item:first-of-type .num {
+    color: #225baf;
+  }
+  .mont-ge.products .item:first-of-type ul {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .mont-ge.products .item:last-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .mont-ge.products .item:last-of-type .num {
+    color: #FFA400;
+  }
+  .mont-ge.products .item ul {
+    list-style-type: none;
+  }
+  .mont-ge.products .item ul li {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: left;
+    height: auto;
+  }
+  .mont-ge.products .l-circle, .mont-ge.products .r-circle {
+    display: none;
+  }
+}
+
+.blue {
+  background-color: #225baf !important;
+  color: white;
+}
+
+.line-ul {
+  padding: 55px 12%;
+  padding-left: 12%;
+  padding-right: 6%;
+  position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.line-ul .l-line {
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 9px;
+  background-color: white;
+}
+
+.line-ul .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto Condensed Light";
+  line-height: 2rem;
+  font-size: 1.7rem;
+}
+
+@media (max-width: 1440px) {
+  .line-ul .item {
+    font-size: calc(0.8rem + 1vw) ;
+  }
+}
+
+.line-ul .item:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.line-ul .item .circle {
+  display: block;
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
+  z-index: 2;
+  border-radius: 50%;
+  background-color: #225baf;
+  border: 11px solid white;
+  margin-right: 20px;
+  margin-left: -13.5px;
+}
+
+@media (max-width: 1400px) {
+  .line-ul .item {
+    line-height: 1.9rem;
+    font-size: 1.65rem;
+  }
+}
+
+@media (max-width: 1400px) and (max-width: 1440px) {
+  .line-ul .item {
+    font-size: calc(0.795rem + 0.95vw) ;
+  }
+}
+
+@media (max-width: 1200px) {
+  .line-ul {
+    padding: 55px 7%;
+  }
+}
+
+@media (max-width: 991px) {
+  .line-ul .l-line {
+    width: 7px;
+  }
+  .line-ul .item .circle {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    margin-left: -11.5px;
+    border-width: 9px;
+    border-radius: 100%;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .line-ul {
+    padding: 50px 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
