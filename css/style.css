@@ -219,12 +219,24 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
 
 .main-container {
   padding-top: 70px;
+  position: relative;
+  height: calc(100vh - 200px);
+  max-height: 600px;
+}
+
+.main-container .img {
   background-image: url(../images/house.jpg);
-  background-position: center;
   height: calc(100vh - 200px);
   max-height: 600px;
   background-size: contain;
   background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-position: center 5px;
+  z-index: -1;
+  top: 25px;
 }
 
 .main-container h2, .main-container button {
@@ -331,6 +343,14 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
 @media (max-width: 1440px) {
   .main-container .banner p {
     font-size: calc(0.77375rem + 0.7375vw) ;
+  }
+}
+
+@media (min-width: 1024px) and (max-height: 770px) {
+  .main-container .img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    top: 50px;
   }
 }
 
@@ -1200,20 +1220,20 @@ footer .contacts p {
 
 footer .econom-container {
   position: relative;
-  margin-top: 160px;
+  margin-top: 45px;
 }
 
 footer .econom-container h3 {
   margin-left: 20%;
   text-transform: uppercase;
   color: white;
-  font-size: 2.4375rem;
+  font-size: 2.45rem;
   font-family: "Roboto Black";
 }
 
 @media (max-width: 1440px) {
   footer .econom-container h3 {
-    font-size: calc(0.87375rem + 1.7375vw) ;
+    font-size: calc(0.875rem + 1.75vw) ;
   }
 }
 
@@ -1223,10 +1243,10 @@ footer .econom-container h3::before {
   position: absolute;
   border: 2px solid white;
   border-left-color: transparent;
-  border-bottom-color: transparent;
-  width: 40%;
-  height: 283px;
-  top: -120px;
+  border-top-color: transparent;
+  width: 30%;
+  height: 200px;
+  top: -75px;
   right: 20%;
   z-index: 2;
   margin: auto;
@@ -1237,12 +1257,11 @@ footer .econom-container h3::after {
   content: '';
   position: absolute;
   border: 2px solid white;
-  border-top-color: transparent;
   border-bottom-color: transparent;
   border-right-color: transparent;
   width: 40%;
-  height: 110px;
-  top: -120px;
+  height: 65px;
+  top: -75px;
   right: 20%;
   z-index: 2;
   margin: auto;
@@ -1251,6 +1270,8 @@ footer .econom-container h3::after {
 footer .econom-container button {
   font-family: "Roboto";
   font-weight: 900;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   border-radius: 10px;
   text-transform: uppercase;
@@ -1297,13 +1318,25 @@ footer .econom-container button {
     text-align: center;
   }
   footer .econom-container h3::before {
-    height: 202px;
+    height: 180px;
     top: -60px;
-    right: 15px;
   }
   footer .econom-container h3::after {
     height: 50px;
     top: -60px;
+  }
+}
+
+@media (max-width: 990px) {
+  footer .econom-container {
+    margin-top: 90px;
+  }
+  footer .econom-container h3::before {
+    width: calc(50% - 15px);
+    right: 15px;
+  }
+  footer .econom-container h3::after {
+    width: calc(50% - 15px);
     right: 15px;
   }
 }
@@ -1355,6 +1388,15 @@ footer .econom-container button {
     margin-top: 10px;
     margin-left: 0;
     font-size: 18px;
+  }
+}
+
+@media (max-width: 440px) {
+  footer .econom-container {
+    margin-top: 50px;
+  }
+  footer .econom-container h3::before, footer .econom-container h3::after {
+    display: none;
   }
 }
 

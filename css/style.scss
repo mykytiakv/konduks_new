@@ -269,12 +269,22 @@ header nav {
 
 .main-container {
     padding-top: 70px;
-    background-image: url(../images/house.jpg);
-    background-position: center;
+    position: relative;
     height: calc(100vh - 200px);
     max-height: 600px;
-    background-size: contain;
-    background-repeat: no-repeat;
+    .img {
+        background-image: url(../images/house.jpg);
+        height: calc(100vh - 200px);
+        max-height: 600px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100%;
+        transform: scale(1.1);
+        background-position: center 5px;
+        z-index: -1;
+        top: 25px;
+    }
     h2, button {
         text-transform: uppercase;
     }
@@ -349,6 +359,14 @@ header nav {
 
 }
 
+@media (min-width: 1024px) and (max-height: 770px) {
+    .main-container {
+        .img {
+            transform: scale(1.2);
+            top: 50px;
+        }
+    }
+}
 @media(max-width: 1200px) {
     .main-container {
         form {
@@ -1042,12 +1060,12 @@ footer {
 
     .econom-container {
         position: relative;
-        margin-top: 160px;
+        margin-top: 45px;
         h3 {
             margin-left: 20%;
             text-transform: uppercase;
             color: white;
-            @include font-size(39px);
+            @include font-size(2.45rem);
             font-family: "Roboto Black";
             &::before {
                 display: block;
@@ -1055,10 +1073,10 @@ footer {
                 position: absolute;
                 border: 2px solid white;
                 border-left-color: transparent;
-                border-bottom-color: transparent;
-                width: 40%;
-                height: 283px;
-                top: -120px;
+                border-top-color: transparent;
+                width: 30%;
+                height: 200px;
+                top: -75px;
                 right: 20%;
                 z-index: 2;
                 margin: auto;
@@ -1068,12 +1086,11 @@ footer {
                 content: '';
                 position: absolute;
                 border: 2px solid white;
-                border-top-color: transparent;
                 border-bottom-color: transparent;
                 border-right-color: transparent;
                 width: 40%;
-                height: 110px;
-                top: -120px;
+                height: 65px;
+                top: -75px;
                 right: 20%;
                 z-index: 2;
                 margin: auto;
@@ -1082,6 +1099,8 @@ footer {
         button {
             font-family: "Roboto";
             font-weight: 900;
+            padding-top: 10px;
+            padding-bottom: 10px;
             text-align: center;
             border-radius: 10px;
             text-transform: uppercase;
@@ -1136,20 +1155,37 @@ footer {
             h3 {
                 
                 &::before {
-                    height: 202px;
+                    height: 180px;
                     top: -60px;
-                    right: 15px;
+                    // right: 15px;
                 }  
                 &::after {
                     height: 50px;
                     top: -60px;
-                    right: 15px;
+                    // right: 15px;
                 }  
             }
         }
     }
 }
 
+@media(max-width: 990px) {
+    footer {
+        .econom-container {
+            margin-top: 90px;
+            h3 { 
+                &::before {
+                    width: calc(50% - 15px);
+                    right: 15px;
+                }  
+                &::after {
+                    width: calc(50% - 15px);
+                    right: 15px;
+                }  
+            }
+        }
+    }
+}
 @media(max-width: 767px) {
     footer {
         
@@ -1164,8 +1200,7 @@ footer {
             .item {
                 margin-bottom: 30px;
             }
-        }
-    
+        }    
     }
 }
 
@@ -1200,6 +1235,21 @@ footer {
         }
     }
 }
+
+@media(max-width: 440px) {
+    footer {
+        .econom-container {
+            margin-top: 50px;
+            h3 {
+                &::before, &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
 
 @media(max-width: 400px) {
     footer {    
