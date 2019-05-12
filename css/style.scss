@@ -279,7 +279,7 @@ header nav {
         text-transform: uppercase;
     }
     h2 {
-        font-size: 19px;
+        @include font-size(19px);
         color: #ffa400;
         font-family: "Roboto";
         font-weight: 900;
@@ -294,10 +294,9 @@ header nav {
         max-width: 357px;
         background-color: #4c4c4c;
         button {
-            font-family: "Roboto";
-            font-weight: 900;
+            font-family: "Roboto Black";
             text-align: center;
-            font-size: 22px;
+            @include font-size(22px);
             width: 100%;
             border-radius: 10px;
             padding: 8px;
@@ -309,7 +308,7 @@ header nav {
             color: #000000;
             font-family: "Roboto Condensed";
             font-weight: 300;
-            font-size: 16px;
+            @include font-size(16px);
             margin-bottom: 15px;
             padding: 12px 17px;
         }
@@ -328,7 +327,7 @@ header nav {
         background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.62) 50%, rgba(255,255,255,0.26) 98%, rgba(255,255,255,0.26) 98%, rgba(255,255,255,0.24) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
         h2 {
-            font-size: 23px;
+            @include font-size(23px);
             color: #225baf;
             line-height: 30px;
             font-weight: 900;
@@ -340,7 +339,7 @@ header nav {
             color: #474644;
             font-weight: 400;
             text-align: center;
-            font-size: 23px;
+            @include font-size(23px);
             line-height: 30px;
             margin-top: 21px;
             text-transform: uppercase;
@@ -358,7 +357,6 @@ header nav {
         .banner {
             max-width: 450px;
             h2, p {
-                font-size: 21px;
                 line-height: 25px;
             }
         }    
@@ -381,16 +379,8 @@ header nav {
 
 @media(max-width: 530px) {
     .main-container {
-        h2 {
-        }
-        form {
-            h2, button {
-                font-size: 18px;
-            }
-        }
         .banner {
             h2, p {
-                font-size: 18px;
                 line-height: 22px;
             }
         }    
@@ -402,15 +392,11 @@ header nav {
         form {
             padding: 30px 15px;
             h2, button {
-                font-size: 16.5px;
                 line-height: 20px;
             }
         }
         .banner {
             padding: 30px 15px;
-            h2, p {
-                font-size: 17px;
-            }
         }    
     }
 }
@@ -426,7 +412,7 @@ header nav {
         text-align: center;
         color: #225baf;
         text-transform: uppercase;
-        font-size: 1.9rem;
+        @include font-size(1.9rem);
         margin-bottom: 2px;
     }
     p {
@@ -434,7 +420,7 @@ header nav {
         font-family: "Roboto Condensed";
         font-weight: 300;
         text-align: center;
-        font-size: 21.5px;
+        @include font-size(21.5px);
     }
 
     .img-item-price {
@@ -444,7 +430,6 @@ header nav {
     .h-cont {
         margin-bottom: 20px;
         max-width: 380px;
-
     }
 
     .inform {
@@ -452,7 +437,7 @@ header nav {
             color: #ffa400;
             font-family: "Roboto";
             font-weight: 400;
-            font-size: 22px;
+            @include font-size(22px);
             margin-bottom: 0;
             text-transform: uppercase;
             position: relative;
@@ -464,7 +449,7 @@ header nav {
             color: #474644;
             font-family: "Roboto Condensed";
             font-weight: 300;
-            font-size: 17px;
+            @include font-size(17px);
         }
         &.left {
             padding-right: 170px;
@@ -477,7 +462,6 @@ header nav {
                 &:after {
                     content: '';
                     background-color: #ffa400;
-                    /* display: block; */
                     width: 170px;
                     height: 2px;
                     right: -170px;
@@ -540,12 +524,6 @@ header nav {
 @media(max-width: 1200px) {
     .benefits {
         .inform {
-            h5 {
-                font-size: 21px;
-            }    
-            p {
-                font-size: 16px;
-            }
             &.left {
                 padding-right: 160px;
             }
@@ -569,8 +547,7 @@ header nav {
     .benefits {    
         .h-cont {
             max-width: 100%;    
-        }
-    
+        }    
         .inform {
             margin-bottom: 35px;
             h5 {
@@ -619,47 +596,6 @@ header nav {
     }
 }
 
-@media(max-width: 767px) {
-    .benefits {
-        h2 {
-            font-size: 1.8rem;
-        }
-        p {
-            font-size: 20px;
-        }
-    }
-}
-
-@media(max-width: 500px) {
-    .benefits {
-        h2 {
-            font-size: 1.6rem;
-        }
-        p {
-            font-size: 18px;
-        }
-        .inform {
-            h5 {
-                font-size: 20px;
-            }
-            img {
-                max-height: 52px;
-            }
-        }
-    }
-}
-
-@media(max-width: 410px) {
-    .benefits {
-        h2 {
-            font-size: 1.5rem;
-        }
-        p {
-            font-size: 17px;
-        }
-    }
-}
-
 // end benefits
 .counter {
     color: #ffffff;
@@ -672,27 +608,14 @@ header nav {
 
     h3 {
         font-family: "Roboto";
-        font-size: 2.5rem;
+        @include font-size(2.5rem);
         font-weight: 900;
     }
 
     p {
         font-weight: 400;
-        font-size: 1.4rem;
+        @include font-size(1.4rem);
         color: white;
-    }
-}
-
-@media(max-width: 1200px) {
-    .counter {
-    
-        h3 {
-            font-size: 2.2rem;
-        }
-    
-        p {
-            font-size: 1.12rem;
-        }
     }
 }
 
@@ -751,7 +674,7 @@ section.products {
             font-family: "Roboto";
             font-weight: 900;
             text-align: center;
-            font-size: 22px;
+            @include font-size(22px);
             width: 100%;
             border-radius: 10px;
             padding: 8px;
@@ -762,17 +685,17 @@ section.products {
             font-size: 67px;
             color: #474644;
             font-weight: 400;
-            font-size: 23px;
+            @include font-size(23px);
         }
         .old {
-            font-size: 28px;
+            @include font-size(28px);
             color: #474644;
             font-family: "Roboto";
             font-weight: 900;
             text-decoration: line-through;
         }
         .new {
-            font-size: 39px;
+            @include font-size(39px);
             color: #225baf;
             font-family: "Roboto";
             font-weight: 900;
@@ -787,18 +710,6 @@ section.products {
             > div {
                 padding: 0 10px;
             }
-            button {
-                font-size: 18px;
-            }
-            h5 {
-                font-size: 22px;
-            }
-            .old {
-                font-size: 24px;
-            }
-            .new {
-                font-size: 30px;
-            }
         }
     }
 }
@@ -811,43 +722,12 @@ section.products {
                     padding: 15px 25px;        
                 }
             }
-            h5 {
-                font-size: 20px;
-            }
-            .old {
-                font-size: 22px;
-            }
-            .new {
-                font-size: 27.5px;
-            }
-        }
-    }
-}
-
-@media(max-width: 991px) {
-    section.products {
-        .pr-list {
-            button {
-                font-size: 20px;
-            }
-            h5 {
-                font-size: 23px;
-            }
-            .old {
-                font-size: 28px;
-            }
-            .new {
-                font-size: 39px;
-            }
         }
     }
 }
 
 @media(max-width: 767px) {
     section.products {
-        // h2 {
-        //     font-size: 1.8rem;
-        // }
         .pr-list {
             > div {
                 > div {
@@ -859,35 +739,6 @@ section.products {
     }
 }
 
-@media(max-width: 500px) {
-    section.products {
-        // h2 {
-        //     font-size: 1.6rem;
-        // }
-        // p {
-        //     font-size: 18px;
-        // }
-    }
-}
-
-@media(max-width: 410px) {
-    section.products {
-        // h2 {
-        //     font-size: 1.5rem;
-        // }
-        // p {
-        //     font-size: 17px;
-        // }
-        .pr-list {
-            .old {
-                font-size: 25px;
-            }
-            .new {
-                font-size: 35px;
-            }
-        }
-    }
-}
 // end products
 
 .comfort {
@@ -897,26 +748,26 @@ section.products {
     background-size: cover;
     background-position: center;
     h2 {
-        font-size: 72px;
+        @include font-size(72px);
         font-family: "Roboto";
         font-weight: 900;
         margin-bottom: 0;
         color: white;
     }
     h5 {
-        font-size: 39px;
+        @include font-size(39px);
         font-family: "Roboto";
         color: white;
     }
     p {
-        font-size: 17px;
+        @include font-size(17px);
         color: #ffffff;
         font-family: "Roboto";
         padding-top: 15px;
         margin-bottom: 1.5rem;
     }
     button {
-        font-size: 23px;
+        @include font-size(23px);
         color: #474644;
         font-family: "Roboto";
         font-weight: 900;
@@ -936,19 +787,6 @@ section.products {
     }
 }
 
-@media (max-width: 1200px) {
-    .comfort {
-        h2 {
-            font-size: 60px;
-        }
-        h5 {
-            font-size: 32px;
-        }
-        button {
-            font-size: 22px;
-        }
-    }
-}
 @media (min-width: 992px) {
     .comfort {
         .content {
@@ -960,46 +798,6 @@ section.products {
     .comfort {
         padding-top: 80px;
         padding-bottom: 60px;
-        h2 {
-            font-size: 48px;
-        }
-        h5 {
-            font-size: 26px;
-        }
-        p {
-            font-size: 18px;
-        }
-        button {
-            font-size: 20px;
-        }
-    }
-}
-
-@media (max-width: 520px) {
-    .comfort {
-        h2 {
-            font-size: 42px;
-        }
-        h5 {
-            font-size: 22px;
-        }
-        p {
-            font-size: 16px;
-        }
-        button {
-            font-size: 18px;
-        }
-    }
-}
-
-@media (max-width: 450px) {
-    .comfort {
-        h2 {
-            font-size: 40px;
-        }
-        h5 {
-            font-size: 20px;
-        }
     }
 }
 // end comfort
@@ -1012,17 +810,6 @@ section.products {
     justify-content: center;
     margin-bottom: 50px;
 }
-
-@media(max-width: 1200px) {
-    .proecting {
-        .items {
-            h5 {
-                font-size: 20px;
-            }
-        }
-    }    
-}
-
 
 @media(max-width: 991px) {
     .proecting {
@@ -1057,7 +844,7 @@ section.products {
         text-align: center;
         color: #225baf;
         text-transform: uppercase;
-        font-size: 1.9rem;
+        @include font-size(1.9rem);
         margin-bottom: 2px;
     }
     p {
@@ -1065,7 +852,7 @@ section.products {
         font-family: "Roboto Condensed";
         font-weight: 300;
         text-align: center;
-        font-size: 21.5px;
+        @include font-size(21.5px);
     }
     .items {
         padding-top: 15px;
@@ -1079,7 +866,7 @@ section.products {
             font-family: "Roboto";
             font-weight: 400;
             text-align: center;
-            font-size: 22px;
+            @include font-size(22px);
             text-transform: uppercase;
             margin-bottom: 0;
         }
@@ -1096,20 +883,12 @@ section.products {
             font-family: "Roboto";
             font-weight: 900;
             text-align: center;
-            font-size: 20px;
+            @include font-size(20px);
             border-radius: 10px;
             text-transform: uppercase;
             line-height: normal;
         }
     }
-}
-
-@media(max-width: 767px) {
-    .proecting {
-        h2 {
-            font-size: 1.8rem;
-        }
-    }    
 }
 
 @media(max-width: 720px) {
@@ -1119,54 +898,12 @@ section.products {
         }
         .items {
             display: block;
-            h5 {
-                font-size: 28px;
-            }
             img {
                 display: block;
             }
-            button {
-                font-size: 22px;
-            }
         }
     }    
 }
-
-@media(max-width: 767px) {
-    .proecting {
-        h2 {
-            font-size: 1.6rem;
-        }
-        p {
-            font-size: 18px;
-        }
-    }    
-}
-
-@media(max-width: 550px) {
-    .proecting {
-        .items {
-            h5 {
-                font-size: 23px;
-            }
-            button {
-                font-size: 20px;
-            }
-        }
-    }    
-}
-
-@media(max-width: 410px) {
-    .proecting {
-        h2 {
-            font-size: 1.5rem;
-        }
-        p {
-            font-size: 17px;
-        }
-    }    
-}
-
 // end proecting
 
 footer {
@@ -1177,7 +914,7 @@ footer {
     padding-bottom: 60px;
 
     h5 {
-        font-size: 30px;
+        @include font-size(30px);
         color: $yellow;
         font-family: "Roboto";
         font-weight: 900;
@@ -1284,7 +1021,7 @@ footer {
         }
 
         h5 {
-            font-size: 27px;
+            @include font-size(27px);
             color: #ffffff;
             font-family: "Roboto";
             font-weight: 400;
@@ -1295,7 +1032,7 @@ footer {
         }
 
         p {
-            font-size: 18px;
+            @include font-size(18px);
             color: #ffffff;
             font-family: "Roboto Condensed";
             font-weight: 300;
@@ -1310,7 +1047,7 @@ footer {
             margin-left: 20%;
             text-transform: uppercase;
             color: white;
-            font-size: 39px;
+            @include font-size(39px);
             font-family: "Roboto Black";
             &::before {
                 display: block;
@@ -1351,7 +1088,7 @@ footer {
             margin-left: 50px;
             position: relative;
             z-index: 3;
-            font-size: 22px;
+            @include font-size(22px);
             line-height: normal;
         }
     }
@@ -1361,25 +1098,12 @@ footer {
     footer {
         .contacts {
             padding: 55px;    
-            h5 {
-                font-size: 26px;
-            }    
-        }
-    
-        .econom-container {
-            h3 {
-                font-size: 35px;
-            }
         }
     }
 }
 
 @media(max-width: 991px) {
     footer {
-    
-        h5 {
-            font-size: 23px;
-        }
     
         .contacts-container {
             padding: 0 10px;
@@ -1401,21 +1125,15 @@ footer {
                     }
                 }
             }
-    
-            h5 {
-                font-size: 23px;
-            }
-    
+        
             p {
                 text-align: center;
-                font-size: 16px;
             }
     
         }
     
         .econom-container {
             h3 {
-                font-size: 26px;
                 
                 &::before {
                     height: 202px;
@@ -1428,9 +1146,6 @@ footer {
                     right: 15px;
                 }  
             }
-            button {
-                font-size: 18px;
-            }
         }
     }
 }
@@ -1442,25 +1157,13 @@ footer {
             margin-top: 30px;
             padding: 0 50px;
         }
-    
-        .contacts-after {
-    
-            &::before {
-            }
-    
-            &::after {
-            }
-        }
+
         .contacts {
             flex-direction: column;
     
             .item {
                 margin-bottom: 30px;
             }
-        
-            h5 {
-                font-size: 28px;
-            }    
         }
     
     }
@@ -1468,7 +1171,11 @@ footer {
 
 @media(max-width: 510px) {
     footer {
-        .contacts {       
+        .contacts {
+            .circle {
+                height: 90px;
+                width: 90px;
+            }
             h5 {
                 font-size: 23px;
             }    
@@ -1507,10 +1214,6 @@ footer {
             .item {
                 margin-bottom: 30px;
             }
-        
-            h5 {
-                font-size: 28px;
-            }    
         }
     }
 }
@@ -1530,7 +1233,7 @@ footer {
             font-weight: 900;
             text-align: center;
             color: $yellow;
-            font-size: 1.9rem;
+            @include font-size(1.9px);
             margin-bottom: 2px;
             text-transform: uppercase;
         }
@@ -1539,7 +1242,7 @@ footer {
             font-family: "Roboto Condensed";
             font-weight: 300;
             text-align: center;
-            font-size: 21.5px;
+            @include font-size(21.5px);
         }
     }
     h5 {
@@ -1549,7 +1252,7 @@ footer {
         font-family: "Roboto";
         font-weight: 400;
         text-align: center;
-        font-size: 22px;
+        @include font-size(22px);
         text-transform: uppercase;
     }
     p {
@@ -1557,7 +1260,7 @@ footer {
         font-family: "Roboto Condensed";
         font-weight: 300;
         text-align: center;
-        font-size: 18px;
+        @include font-size(18px);
     }
     .cont, .container {
         height: 100%;
@@ -1658,8 +1361,6 @@ footer {
         .inform {
             padding-right: 100px;
             .img-container {
-                .dot {
-                }
                 .line {
                     right: -100px;
                     width: 100px;
@@ -1677,14 +1378,6 @@ footer {
 
 @media(max-width: 767px) {
     .montage {
-        .title {
-            h2 {
-                font-size: 1.6rem;
-            }
-            p {
-                font-size: 18px;
-            }
-        }
         .vert-line {
             margin-left: 39px;
         }
@@ -1759,17 +1452,6 @@ footer {
 
 @media(max-width: 400px) {
     .montage {
-        .title {
-            h2 {
-                font-size: 1.5rem;
-            }
-            p {
-                font-size: 17px;
-            }
-        }
-        p {
-            font-size: 17px;
-        }
         .vert-line {
             margin-left: 29px;
         }        
@@ -1931,6 +1613,43 @@ footer {
         }
     }
 }
+@media (min-width: 1500px) {
+    .plan {
+        .math {
+            .plus {
+                left: calc(33% + 10px);
+            }
+            .equals {
+                left: calc(66% - 45px);
+            }
+        }
+    }
+}
+@media (min-width: 1700px) {
+    .plan {
+        .math {
+            .plus {
+                left: calc(33% + 33px);
+            }
+            .equals {
+                left: calc(66% - 71px);
+            }
+        }
+    }
+}
+@media (min-width: 1800px) {
+    .plan {
+        .math {
+            .plus {
+                left: calc(33% + 60px);
+            }
+            .equals {
+                left: calc(66% - 80px);
+            }
+        }
+    }
+}
+
 @media (max-width: 1500px) {
     .plan {
         .math {

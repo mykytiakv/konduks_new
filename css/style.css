@@ -232,11 +232,17 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
 }
 
 .main-container h2 {
-  font-size: 19px;
+  font-size: 1.1875rem;
   color: #ffa400;
   font-family: "Roboto";
   font-weight: 900;
   text-align: center;
+}
+
+@media (max-width: 1440px) {
+  .main-container h2 {
+    font-size: calc(0.74875rem + 0.4875vw) ;
+  }
 }
 
 .main-container form {
@@ -251,14 +257,19 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
 }
 
 .main-container form button {
-  font-family: "Roboto";
-  font-weight: 900;
+  font-family: "Roboto Black";
   text-align: center;
-  font-size: 22px;
+  font-size: 1.375rem;
   width: 100%;
   border-radius: 10px;
   padding: 8px;
   line-height: normal;
+}
+
+@media (max-width: 1440px) {
+  .main-container form button {
+    font-size: calc(0.7675rem + 0.675vw) ;
+  }
 }
 
 .main-container form input {
@@ -267,9 +278,15 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
   color: #000000;
   font-family: "Roboto Condensed";
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 15px;
   padding: 12px 17px;
+}
+
+@media (max-width: 1440px) {
+  .main-container form input {
+    font-size: calc(0.73rem + 0.3vw) ;
+  }
 }
 
 .main-container .banner {
@@ -285,7 +302,7 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
 }
 
 .main-container .banner h2 {
-  font-size: 23px;
+  font-size: 1.4375rem;
   color: #225baf;
   line-height: 30px;
   font-weight: 900;
@@ -294,15 +311,27 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
   font-family: "Roboto";
 }
 
+@media (max-width: 1440px) {
+  .main-container .banner h2 {
+    font-size: calc(0.77375rem + 0.7375vw) ;
+  }
+}
+
 .main-container .banner p {
   color: #474644;
   font-weight: 400;
   text-align: center;
-  font-size: 23px;
+  font-size: 1.4375rem;
   line-height: 30px;
   margin-top: 21px;
   text-transform: uppercase;
   line-height: 25px;
+}
+
+@media (max-width: 1440px) {
+  .main-container .banner p {
+    font-size: calc(0.77375rem + 0.7375vw) ;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -313,7 +342,6 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
     max-width: 450px;
   }
   .main-container .banner h2, .main-container .banner p {
-    font-size: 21px;
     line-height: 25px;
   }
 }
@@ -338,11 +366,7 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
 }
 
 @media (max-width: 530px) {
-  .main-container form h2, .main-container form button {
-    font-size: 18px;
-  }
   .main-container .banner h2, .main-container .banner p {
-    font-size: 18px;
     line-height: 22px;
   }
 }
@@ -352,14 +376,10 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
     padding: 30px 15px;
   }
   .main-container form h2, .main-container form button {
-    font-size: 16.5px;
     line-height: 20px;
   }
   .main-container .banner {
     padding: 30px 15px;
-  }
-  .main-container .banner h2, .main-container .banner p {
-    font-size: 17px;
   }
 }
 
@@ -378,12 +398,24 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
   margin-bottom: 2px;
 }
 
+@media (max-width: 1440px) {
+  .benefits h2 {
+    font-size: calc(0.82rem + 1.2vw) ;
+  }
+}
+
 .benefits p {
   color: #474644;
   font-family: "Roboto Condensed";
   font-weight: 300;
   text-align: center;
-  font-size: 21.5px;
+  font-size: 1.34375rem;
+}
+
+@media (max-width: 1440px) {
+  .benefits p {
+    font-size: calc(0.76437rem + 0.64375vw) ;
+  }
 }
 
 .benefits .img-item-price {
@@ -399,11 +431,17 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
   color: #ffa400;
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 22px;
+  font-size: 1.375rem;
   margin-bottom: 0;
   text-transform: uppercase;
   position: relative;
   border-bottom: 2px solid #ffa400;
+}
+
+@media (max-width: 1440px) {
+  .benefits .inform h5 {
+    font-size: calc(0.7675rem + 0.675vw) ;
+  }
 }
 
 .benefits .inform p {
@@ -411,7 +449,13 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
   color: #474644;
   font-family: "Roboto Condensed";
   font-weight: 300;
-  font-size: 17px;
+  font-size: 1.0625rem;
+}
+
+@media (max-width: 1440px) {
+  .benefits .inform p {
+    font-size: calc(0.73625rem + 0.3625vw) ;
+  }
 }
 
 .benefits .inform.left {
@@ -429,7 +473,6 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
 .benefits .inform.left h5:after {
   content: '';
   background-color: #ffa400;
-  /* display: block; */
   width: 170px;
   height: 2px;
   right: -170px;
@@ -486,12 +529,6 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
 }
 
 @media (max-width: 1200px) {
-  .benefits .inform h5 {
-    font-size: 21px;
-  }
-  .benefits .inform p {
-    font-size: 16px;
-  }
   .benefits .inform.left {
     padding-right: 160px;
   }
@@ -561,39 +598,6 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
   }
 }
 
-@media (max-width: 767px) {
-  .benefits h2 {
-    font-size: 1.8rem;
-  }
-  .benefits p {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 500px) {
-  .benefits h2 {
-    font-size: 1.6rem;
-  }
-  .benefits p {
-    font-size: 18px;
-  }
-  .benefits .inform h5 {
-    font-size: 20px;
-  }
-  .benefits .inform img {
-    max-height: 52px;
-  }
-}
-
-@media (max-width: 410px) {
-  .benefits h2 {
-    font-size: 1.5rem;
-  }
-  .benefits p {
-    font-size: 17px;
-  }
-}
-
 .counter {
   color: #ffffff;
   font-family: "Roboto";
@@ -610,18 +614,21 @@ header nav .navbar-nav li.nav-item.active a.nav-link {
   font-weight: 900;
 }
 
+@media (max-width: 1440px) {
+  .counter h3 {
+    font-size: calc(0.88rem + 1.8vw) ;
+  }
+}
+
 .counter p {
   font-weight: 400;
   font-size: 1.4rem;
   color: white;
 }
 
-@media (max-width: 1200px) {
-  .counter h3 {
-    font-size: 2.2rem;
-  }
+@media (max-width: 1440px) {
   .counter p {
-    font-size: 1.12rem;
+    font-size: calc(0.77rem + 0.7vw) ;
   }
 }
 
@@ -705,7 +712,7 @@ section.products .pr-list button {
   font-family: "Roboto";
   font-weight: 900;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.375rem;
   width: 100%;
   border-radius: 10px;
   padding: 8px;
@@ -713,44 +720,56 @@ section.products .pr-list button {
   text-transform: uppercase;
 }
 
+@media (max-width: 1440px) {
+  section.products .pr-list button {
+    font-size: calc(0.7675rem + 0.675vw) ;
+  }
+}
+
 section.products .pr-list h5 {
   font-size: 67px;
   color: #474644;
   font-weight: 400;
-  font-size: 23px;
+  font-size: 1.4375rem;
+}
+
+@media (max-width: 1440px) {
+  section.products .pr-list h5 {
+    font-size: calc(0.77375rem + 0.7375vw) ;
+  }
 }
 
 section.products .pr-list .old {
-  font-size: 28px;
+  font-size: 1.75rem;
   color: #474644;
   font-family: "Roboto";
   font-weight: 900;
   text-decoration: line-through;
 }
 
+@media (max-width: 1440px) {
+  section.products .pr-list .old {
+    font-size: calc(0.805rem + 1.05vw) ;
+  }
+}
+
 section.products .pr-list .new {
-  font-size: 39px;
+  font-size: 2.4375rem;
   color: #225baf;
   font-family: "Roboto";
   font-weight: 900;
   text-align: center;
 }
 
+@media (max-width: 1440px) {
+  section.products .pr-list .new {
+    font-size: calc(0.87375rem + 1.7375vw) ;
+  }
+}
+
 @media (max-width: 1200px) {
   section.products .pr-list > div {
     padding: 0 10px;
-  }
-  section.products .pr-list button {
-    font-size: 18px;
-  }
-  section.products .pr-list h5 {
-    font-size: 22px;
-  }
-  section.products .pr-list .old {
-    font-size: 24px;
-  }
-  section.products .pr-list .new {
-    font-size: 30px;
   }
 }
 
@@ -758,45 +777,12 @@ section.products .pr-list .new {
   section.products .pr-list > div > div {
     padding: 15px 25px;
   }
-  section.products .pr-list h5 {
-    font-size: 20px;
-  }
-  section.products .pr-list .old {
-    font-size: 22px;
-  }
-  section.products .pr-list .new {
-    font-size: 27.5px;
-  }
-}
-
-@media (max-width: 991px) {
-  section.products .pr-list button {
-    font-size: 20px;
-  }
-  section.products .pr-list h5 {
-    font-size: 23px;
-  }
-  section.products .pr-list .old {
-    font-size: 28px;
-  }
-  section.products .pr-list .new {
-    font-size: 39px;
-  }
 }
 
 @media (max-width: 767px) {
   section.products .pr-list > div > div {
     max-width: 380px;
     margin: auto;
-  }
-}
-
-@media (max-width: 410px) {
-  section.products .pr-list .old {
-    font-size: 25px;
-  }
-  section.products .pr-list .new {
-    font-size: 35px;
   }
 }
 
@@ -809,29 +795,47 @@ section.products .pr-list .new {
 }
 
 .comfort h2 {
-  font-size: 72px;
+  font-size: 4.5rem;
   font-family: "Roboto";
   font-weight: 900;
   margin-bottom: 0;
   color: white;
 }
 
+@media (max-width: 1440px) {
+  .comfort h2 {
+    font-size: calc(1.08rem + 3.8vw) ;
+  }
+}
+
 .comfort h5 {
-  font-size: 39px;
+  font-size: 2.4375rem;
   font-family: "Roboto";
   color: white;
 }
 
+@media (max-width: 1440px) {
+  .comfort h5 {
+    font-size: calc(0.87375rem + 1.7375vw) ;
+  }
+}
+
 .comfort p {
-  font-size: 17px;
+  font-size: 1.0625rem;
   color: #ffffff;
   font-family: "Roboto";
   padding-top: 15px;
   margin-bottom: 1.5rem;
 }
 
+@media (max-width: 1440px) {
+  .comfort p {
+    font-size: calc(0.73625rem + 0.3625vw) ;
+  }
+}
+
 .comfort button {
-  font-size: 23px;
+  font-size: 1.4375rem;
   color: #474644;
   font-family: "Roboto";
   font-weight: 900;
@@ -846,22 +850,16 @@ section.products .pr-list .new {
   transition: all .3s ease;
 }
 
+@media (max-width: 1440px) {
+  .comfort button {
+    font-size: calc(0.77375rem + 0.7375vw) ;
+  }
+}
+
 .comfort button:hover, .comfort button:active, .comfort button:focus {
   color: #ffa400;
   background-color: transparent;
   cursor: pointer;
-}
-
-@media (max-width: 1200px) {
-  .comfort h2 {
-    font-size: 60px;
-  }
-  .comfort h5 {
-    font-size: 32px;
-  }
-  .comfort button {
-    font-size: 22px;
-  }
 }
 
 @media (min-width: 992px) {
@@ -874,42 +872,6 @@ section.products .pr-list .new {
   .comfort {
     padding-top: 80px;
     padding-bottom: 60px;
-  }
-  .comfort h2 {
-    font-size: 48px;
-  }
-  .comfort h5 {
-    font-size: 26px;
-  }
-  .comfort p {
-    font-size: 18px;
-  }
-  .comfort button {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 520px) {
-  .comfort h2 {
-    font-size: 42px;
-  }
-  .comfort h5 {
-    font-size: 22px;
-  }
-  .comfort p {
-    font-size: 16px;
-  }
-  .comfort button {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 450px) {
-  .comfort h2 {
-    font-size: 40px;
-  }
-  .comfort h5 {
-    font-size: 20px;
   }
 }
 
@@ -929,12 +891,6 @@ section.products .pr-list .new {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
-}
-
-@media (max-width: 1200px) {
-  .proecting .items h5 {
-    font-size: 20px;
-  }
 }
 
 @media (max-width: 991px) {
@@ -980,12 +936,24 @@ section.products .pr-list .new {
   margin-bottom: 2px;
 }
 
+@media (max-width: 1440px) {
+  .proecting h2 {
+    font-size: calc(0.82rem + 1.2vw) ;
+  }
+}
+
 .proecting p {
   color: #474644;
   font-family: "Roboto Condensed";
   font-weight: 300;
   text-align: center;
-  font-size: 21.5px;
+  font-size: 1.34375rem;
+}
+
+@media (max-width: 1440px) {
+  .proecting p {
+    font-size: calc(0.76437rem + 0.64375vw) ;
+  }
 }
 
 .proecting .items {
@@ -1007,9 +975,15 @@ section.products .pr-list .new {
   font-family: "Roboto";
   font-weight: 400;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.375rem;
   text-transform: uppercase;
   margin-bottom: 0;
+}
+
+@media (max-width: 1440px) {
+  .proecting .items h5 {
+    font-size: calc(0.7675rem + 0.675vw) ;
+  }
 }
 
 .proecting .items img {
@@ -1025,15 +999,15 @@ section.products .pr-list .new {
   font-family: "Roboto";
   font-weight: 900;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   border-radius: 10px;
   text-transform: uppercase;
   line-height: normal;
 }
 
-@media (max-width: 767px) {
-  .proecting h2 {
-    font-size: 1.8rem;
+@media (max-width: 1440px) {
+  .proecting .items button {
+    font-size: calc(0.755rem + 0.55vw) ;
   }
 }
 
@@ -1044,41 +1018,8 @@ section.products .pr-list .new {
   .proecting .items {
     display: block;
   }
-  .proecting .items h5 {
-    font-size: 28px;
-  }
   .proecting .items img {
     display: block;
-  }
-  .proecting .items button {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 767px) {
-  .proecting h2 {
-    font-size: 1.6rem;
-  }
-  .proecting p {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 550px) {
-  .proecting .items h5 {
-    font-size: 23px;
-  }
-  .proecting .items button {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 410px) {
-  .proecting h2 {
-    font-size: 1.5rem;
-  }
-  .proecting p {
-    font-size: 17px;
   }
 }
 
@@ -1091,13 +1032,19 @@ footer {
 }
 
 footer h5 {
-  font-size: 30px;
+  font-size: 1.875rem;
   color: #ffa400;
   font-family: "Roboto";
   font-weight: 900;
   margin-bottom: 35px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (max-width: 1440px) {
+  footer h5 {
+    font-size: calc(0.8175rem + 1.175vw) ;
+  }
 }
 
 footer .contacts-container {
@@ -1222,7 +1169,7 @@ footer .contacts .circle img.iphone {
 }
 
 footer .contacts h5 {
-  font-size: 27px;
+  font-size: 1.6875rem;
   color: #ffffff;
   font-family: "Roboto";
   font-weight: 400;
@@ -1232,11 +1179,23 @@ footer .contacts h5 {
   margin-bottom: 1.5rem;
 }
 
+@media (max-width: 1440px) {
+  footer .contacts h5 {
+    font-size: calc(0.79875rem + 0.9875vw) ;
+  }
+}
+
 footer .contacts p {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #ffffff;
   font-family: "Roboto Condensed";
   font-weight: 300;
+}
+
+@media (max-width: 1440px) {
+  footer .contacts p {
+    font-size: calc(0.7425rem + 0.425vw) ;
+  }
 }
 
 footer .econom-container {
@@ -1248,8 +1207,14 @@ footer .econom-container h3 {
   margin-left: 20%;
   text-transform: uppercase;
   color: white;
-  font-size: 39px;
+  font-size: 2.4375rem;
   font-family: "Roboto Black";
+}
+
+@media (max-width: 1440px) {
+  footer .econom-container h3 {
+    font-size: calc(0.87375rem + 1.7375vw) ;
+  }
 }
 
 footer .econom-container h3::before {
@@ -1292,26 +1257,23 @@ footer .econom-container button {
   margin-left: 50px;
   position: relative;
   z-index: 3;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: normal;
+}
+
+@media (max-width: 1440px) {
+  footer .econom-container button {
+    font-size: calc(0.7675rem + 0.675vw) ;
+  }
 }
 
 @media (max-width: 1200px) {
   footer .contacts {
     padding: 55px;
   }
-  footer .contacts h5 {
-    font-size: 26px;
-  }
-  footer .econom-container h3 {
-    font-size: 35px;
-  }
 }
 
 @media (max-width: 991px) {
-  footer h5 {
-    font-size: 23px;
-  }
   footer .contacts-container {
     padding: 0 10px;
   }
@@ -1331,15 +1293,8 @@ footer .econom-container button {
   footer .contacts .circle img.iphone {
     height: 54px;
   }
-  footer .contacts h5 {
-    font-size: 23px;
-  }
   footer .contacts p {
     text-align: center;
-    font-size: 16px;
-  }
-  footer .econom-container h3 {
-    font-size: 26px;
   }
   footer .econom-container h3::before {
     height: 202px;
@@ -1350,9 +1305,6 @@ footer .econom-container button {
     height: 50px;
     top: -60px;
     right: 15px;
-  }
-  footer .econom-container button {
-    font-size: 18px;
   }
 }
 
@@ -1370,12 +1322,13 @@ footer .econom-container button {
   footer .contacts .item {
     margin-bottom: 30px;
   }
-  footer .contacts h5 {
-    font-size: 28px;
-  }
 }
 
 @media (max-width: 510px) {
+  footer .contacts .circle {
+    height: 90px;
+    width: 90px;
+  }
   footer .contacts h5 {
     font-size: 23px;
   }
@@ -1419,9 +1372,6 @@ footer .econom-container button {
   footer .contacts .item {
     margin-bottom: 30px;
   }
-  footer .contacts h5 {
-    font-size: 28px;
-  }
 }
 
 .montage {
@@ -1441,7 +1391,7 @@ footer .econom-container button {
   font-weight: 900;
   text-align: center;
   color: #ffa400;
-  font-size: 1.9rem;
+  font-size: 0.11875rem;
   margin-bottom: 2px;
   text-transform: uppercase;
 }
@@ -1451,7 +1401,13 @@ footer .econom-container button {
   font-family: "Roboto Condensed";
   font-weight: 300;
   text-align: center;
-  font-size: 21.5px;
+  font-size: 1.34375rem;
+}
+
+@media (max-width: 1440px) {
+  .montage .title p {
+    font-size: calc(0.76437rem + 0.64375vw) ;
+  }
 }
 
 .montage h5 {
@@ -1461,8 +1417,14 @@ footer .econom-container button {
   font-family: "Roboto";
   font-weight: 400;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.375rem;
   text-transform: uppercase;
+}
+
+@media (max-width: 1440px) {
+  .montage h5 {
+    font-size: calc(0.7675rem + 0.675vw) ;
+  }
 }
 
 .montage p {
@@ -1470,7 +1432,13 @@ footer .econom-container button {
   font-family: "Roboto Condensed";
   font-weight: 300;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 1440px) {
+  .montage p {
+    font-size: calc(0.7425rem + 0.425vw) ;
+  }
 }
 
 .montage .cont, .montage .container {
@@ -1598,12 +1566,6 @@ footer .econom-container button {
 }
 
 @media (max-width: 767px) {
-  .montage .title h2 {
-    font-size: 1.6rem;
-  }
-  .montage .title p {
-    font-size: 18px;
-  }
   .montage .vert-line {
     margin-left: 39px;
   }
@@ -1662,15 +1624,6 @@ footer .econom-container button {
 }
 
 @media (max-width: 400px) {
-  .montage .title h2 {
-    font-size: 1.5rem;
-  }
-  .montage .title p {
-    font-size: 17px;
-  }
-  .montage p {
-    font-size: 17px;
-  }
   .montage .vert-line {
     margin-left: 29px;
   }
@@ -1842,6 +1795,33 @@ footer .econom-container button {
 
 .plan .math .math-item:last-of-type img {
   padding-left: 15px;
+}
+
+@media (min-width: 1500px) {
+  .plan .math .plus {
+    left: calc(33% + 10px);
+  }
+  .plan .math .equals {
+    left: calc(66% - 45px);
+  }
+}
+
+@media (min-width: 1700px) {
+  .plan .math .plus {
+    left: calc(33% + 33px);
+  }
+  .plan .math .equals {
+    left: calc(66% - 71px);
+  }
+}
+
+@media (min-width: 1800px) {
+  .plan .math .plus {
+    left: calc(33% + 60px);
+  }
+  .plan .math .equals {
+    left: calc(66% - 80px);
+  }
 }
 
 @media (max-width: 1500px) {
