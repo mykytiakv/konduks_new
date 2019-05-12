@@ -2619,6 +2619,11 @@ footer .econom-container button {
     padding-right: 20px;
   }
   .additional .col-1-5 {
+    width: 33%;
+  }
+}
+@media (max-width: 550px) {
+  .additional .col-1-5 {
     width: 100%;
   }
 }
