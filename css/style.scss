@@ -4,9 +4,34 @@ $yellow: #ffa400;
 
 @font-face {
     font-family: 'Roboto Condensed Light';
-    src: url(../fonts/roboto-condensed-light.ttf) format('truetype');
+    src: url('../fonts/light/roboto-condensed-light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/light/roboto-condensed-light.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/light/RobotoCondensed-Light.woff') format('woff'), /* Pretty Modern Browsers */
+            url('../fonts/light/RobotoCondensed-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/light/RobotoCondensed-Light.svg') format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+    font-family: 'Roboto Black';
+    src: url('../fonts/black/Roboto-Black.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/black/Roboto-Black.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/black/Roboto-Black.woff') format('woff'), /* Pretty Modern Browsers */
+            url('../fonts/black/Roboto-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/black/Roboto-Black.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fonts/regular/Roboto-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/regular/Roboto-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/regular/Roboto-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+            url('../fonts/regular/Roboto-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/regular/Roboto-Regular.svg') format('svg'); /* Legacy iOS */
+}
+
+body {
+    overflow-x: hidden;
+}
 .container {
     max-width: 1300px;
     // padding: 0 7.12%;
@@ -37,6 +62,7 @@ $yellow: #ffa400;
 
     .container {
         display: flex;
+        margin-bottom: -1px;
     }
 
     .logo {
@@ -116,7 +142,7 @@ $yellow: #ffa400;
     .button-parent {
         margin-top: -10px;
         button {
-            margin-top: 5px;
+            margin-top: 10px;
             margin-right: 8px;
             background-color: $yellow;
             color: black;
@@ -621,8 +647,8 @@ header nav {
     font-weight: 900;
     text-align: center;
     background-color: #225baf;
-    padding-top: 35px;
-    padding-bottom: 27px;
+    padding-top: 22px;
+    padding-bottom: 15px;
 
     h3 {
         font-family: "Roboto";
@@ -936,13 +962,14 @@ footer {
         color: $yellow;
         font-family: "Roboto";
         font-weight: 900;
-        margin-bottom: 35px;
         text-align: center;
         text-transform: uppercase;
+        margin-bottom: 0;
     }
 
     .contacts-container {
         padding: 0 60px;
+        margin-top: -5px;
     }
 
     .contacts-after {
@@ -1283,7 +1310,7 @@ footer {
             font-weight: 900;
             text-align: center;
             color: $yellow;
-            @include font-size(1.9px);
+            @include font-size(1.9rem);
             margin-bottom: 2px;
             text-transform: uppercase;
         }
@@ -1548,7 +1575,7 @@ footer {
     margin-top: 15px;
     h3 {
         font-family: "Roboto Black";
-        @include font-size(2.85rem);
+        @include font-size(1.9rem);
         color: #474644;
         text-align: center;
     }
@@ -1556,10 +1583,10 @@ footer {
         list-style-type: none;
         padding-left: 0;
         font-family: "Roboto Condensed Light";
-        @include font-size(2.85rem);
+        @include font-size(1.8rem);
         color: #474644;
         li {
-            line-height: 2.85rem;
+            line-height: 1.9rem;
             img {
                 width: 55px;
                 margin-right: 21px;                
@@ -2005,8 +2032,8 @@ footer {
     }
     p {
         color: #225baf;
-        margin-top: 35px;
-        margin-bottom: 35px;
+        margin-top: 15px;
+        margin-bottom: 25px;
         font-family: "Roboto Regular";
         @include font-size(1.55rem);
     }
@@ -2261,7 +2288,7 @@ footer {
     }
 }
 .additional {
-    margin-top: 100px;
+    margin-top: 50px;
     .row {
         justify-content: center;
     }
@@ -2278,6 +2305,9 @@ footer {
         @include font-size(1.05rem);
         line-height: 1.2rem;
         text-transform: uppercase;
+    }
+    .col-1-5 {
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 1400px) {
@@ -2381,16 +2411,18 @@ footer {
                 text-decoration: line-through;
                 text-align: right;
                 @include font-size(2rem);
+                line-height: initial;
             }
             .new {
                 color: #225baf;
                 text-align: right;
                 margin-left: 25px;
+                line-height: initial;
                 @include font-size(2.3rem);
             }
             button {
                 font-family: "Roboto Black";
-                margin-top: 20px;
+                margin-top: 15px;
                 @include font-size(22px);
                 border-radius: 10px;
                 padding: 4px 45px;
